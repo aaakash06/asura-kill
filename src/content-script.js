@@ -1,11 +1,3 @@
-let isEnabled = true;
-
-// Listen for messages from the popup
-chrome.runtime.onMessage.addListener((message) => {
-  if (message.enabled !== undefined) {
-    isEnabled = message.enabled;
-  }
-});
 // Configure these values for your needs
 const TARGET_URL = "https://asuracomic.net";
 const OVERLAY_SELECTORS = [".fixed"];
@@ -19,7 +11,6 @@ function removeOverlays() {
     });
   });
 }
-console.log(isEnabled);
 // Check if current URL matches target domain and subpaths
 if (window.location.href.includes(TARGET_URL)) {
   // Run immediately on page load
