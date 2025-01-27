@@ -19,7 +19,7 @@ function removeOverlays() {
     });
   });
 }
-
+console.log(isEnabled);
 // Check if current URL matches target domain and subpaths
 if (window.location.href.includes(TARGET_URL)) {
   // Run immediately on page load
