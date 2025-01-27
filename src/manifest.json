@@ -15,12 +15,6 @@
       "run_at": "document_end"
     }
   ],
-  "action": {
-    "default_popup": "popup/popup.html",
-    "default_icon": {
-      "16": "icons/asura.webp"
-    }
-  },
   "icons": {
     "16": "icons/asura.webp"
   }
