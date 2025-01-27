@@ -1,8 +1,17 @@
+let isEnabled = true;
+
+// Listen for messages from the popup
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.enabled !== undefined) {
+    isEnabled = message.enabled;
+  }
+});
 // Configure these values for your needs
 const TARGET_URL = "https://asuracomic.net";
 const OVERLAY_SELECTORS = [".fixed"];
 
 function removeOverlays() {
+  if (!isEnabled) return;
   OVERLAY_SELECTORS.forEach((selector) => {
     const elements = document.querySelectorAll(selector);
     elements.forEach((element) => {
