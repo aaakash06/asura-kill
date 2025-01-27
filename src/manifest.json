@@ -16,9 +16,11 @@
     }
   ],
   "action": {
-    "default_icon": "icons/asassin.png"
+    "default_icon": "icons/asura16.png"
   },
   "icons": {
-    "16": "icons/asura.webp"
+    "16": "icons/asura16.png",
+    "48": "icons/asura48.png",
+    "128": "icons/asura128.png"
   }
 }
