@@ -1,13 +1,7 @@
 // Configure these values for your needs
 const TARGET_URL = "https://asuracomic.net";
 const OVERLAY_SELECTORS = [
-  "#overlay",
-  ".modal-backdrop",
-  ".cookie-consent",
-  'div[aria-modal="true"]',
-  ".lightbox",
-  ".popup",
-  ".overlay",
+  ".fixed .inset-0 .bg-gray-900 .bg-opacity-75 .flex .items-center .justify-center .z-50 .p-4 .overflow-y-auto",
 ];
 
 function removeOverlays() {
