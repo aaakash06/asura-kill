@@ -1,10 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "Form Field Filler",
+  "name": "Asura Killer",
   "version": "1.0",
-  "description": "Automatically fills form fields with predefined values",
+  "description": "Removes overlay elements from Asura Scan",
   "permissions": ["activeTab", "scripting"],
-  "action": {
-    "default_popup": "popup.html"
-  }
+  "host_permissions": ["https://asuracomic.net/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://asuracomic.net/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
 }
