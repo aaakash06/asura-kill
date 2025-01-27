@@ -7,7 +7,7 @@ function removeOverlays() {
     const elements = document.querySelectorAll(selector);
     elements.forEach((element) => {
       element.remove();
-      console.log(`Removed overlay element: ${selector}`);
+      console.log(`Removed overlay`);
     });
   });
 }
